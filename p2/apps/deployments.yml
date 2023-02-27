@@ -1,0 +1,78 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-1
+  labels:
+    app: app-1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-1
+  template:
+    metadata:
+      labels:
+        app: app-1
+    spec:
+      containers:
+      - name: app-1
+        image: paulbouwer/hello-kubernetes:1.10.1
+        env:
+        - name: MESSAGE
+          value: This is app 1!
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-2
+  labels:
+    app: app-2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app-2
+  template:
+    metadata:
+      labels:
+        app: app-2
+    spec:
+      containers:
+      - name: app-2
+        image: paulbouwer/hello-kubernetes:1.10.1
+        env:
+        - name: MESSAGE
+          value: This is app 2!
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-3
+  labels:
+    app: app-3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-3
+  template:
+    metadata:
+      labels:
+        app: app-3
+    spec:
+      containers:
+      - name: app-3
+        image: paulbouwer/hello-kubernetes:1.10.1
+        env:
+        - name: MESSAGE
+          value: This is app 3!
+        ports:
+        - containerPort: 8080
+---
+
+

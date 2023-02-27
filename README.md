@@ -8,8 +8,8 @@ Using [Vagrant](https://www.vagrantup.com/) and [Virtualbox](https://www.virtual
 
 | Part | Description |
 | :-: | :-: |
-| 1 | This part will teach you how to install [k3s](https://k3s.io/) and create a server/worker cluster. |
-| 2 | |
+| [1](./p1/README.md) | Install [k3s](https://k3s.io/) and create a server/worker cluster. |
+| [2](./p2/README.md) | Create a cluster with multiple web applications |
 | 3 | |
 | Bonus | |
 
@@ -20,6 +20,11 @@ Using [Vagrant](https://www.vagrantup.com/) and [Virtualbox](https://www.virtual
 - [k3s flags documentation](https://www.rancher.co.jp/docs/k3s/latest/en/installation/)
 - [k3s configuration](https://docs.k3s.io/installation/configuration)
 - [k3s networking](https://docs.k3s.io/installation/requirements#networking)
+- [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/)
+- [Services](https://kubernetes.io/docs/concepts/services-networking/service/)
+- [Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+- [Ingresses](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+- [Replica sets](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)
 
 ### Virtualization
 
