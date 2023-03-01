@@ -1,22 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-application
+  name: playground-argocd
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: ''
+    repoURL: https://github.com/kibotrel/kibotrel-iot-part-3
     targetRevision: HEAD
-    path: dev
+    path: app
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
-
   syncPolicy:
-    syncOptions:
-    - CreateNamespace=true
-
     automated:
       selfHeal: true
       prune: true
