@@ -10,16 +10,18 @@ Using [Vagrant](https://www.vagrantup.com/) and [Virtualbox](https://www.virtual
 | :-: | :-: |
 | [1](./p1/README.md) | Install [k3s](https://k3s.io/) and create a server/worker cluster. |
 | [2](./p2/README.md) | Create a cluster with multiple web applications |
-| 3 | |
-| Bonus | |
+| [3](./p3/README.md) | CI/CD Pipeline using [k3d](https://k3d.io/v5.4.7/) and [argoCD](https://argo-cd.readthedocs.io/en/stable/)|
 
 ## :books: Resources
 
 ### Kubernetes
 
+- [k3s](https://k3s.io/)
 - [k3s flags documentation](https://www.rancher.co.jp/docs/k3s/latest/en/installation/)
 - [k3s configuration](https://docs.k3s.io/installation/configuration)
 - [k3s networking](https://docs.k3s.io/installation/requirements#networking)
+- [k3d](https://k3d.io/v5.4.7/)
+- [kubectl](https://kubernetes.io/docs/reference/kubectl/)
 - [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/)
 - [Services](https://kubernetes.io/docs/concepts/services-networking/service/)
 - [Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
