@@ -40,3 +40,5 @@ Using [Vagrant](https://www.vagrantup.com/) and [Virtualbox](https://www.virtual
 - [Enable nested virtualization](https://forums.virtualbox.org/viewtopic.php?t=90831)
 - [Vagrant](https://www.vagrantup.com/)
 - [Vagrantfile](https://www.vagrantup.com/docs/vagrantfile/)
+
+*Made in collaboration with [@taiwing](https://github.com/Taiwing)*
